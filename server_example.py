@@ -105,4 +105,4 @@ if __name__ == "__main__":
     server.bind_callback(commands.foobar, callbacks.test3)
 
     # Run the server.
-    server.run(ip="localhost", port=3000)
+    server.run(ip="0.0.0.0", port=3000)
