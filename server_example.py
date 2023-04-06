@@ -58,10 +58,10 @@ if __name__ == "__main__":
     # Set the message-of-the-day.
     server.set_motd("WorldSprites", True)
 
-# Here are some extra parameters you can specify to change the functionality of the server.
-server.ip_blocklist = ["127.0.0.1"]
-server.reject_clients = False
-server.check_ip_addresses = True
+    # Here are some extra parameters you can specify to change the functionality of the server.
+    server.ip_blocklist = ["127.0.0.1"]
+    server.reject_clients = False
+    server.check_ip_addresses = True
 
     # Run the server.
     server.run(ip="0.0.0.0", port=3000)
