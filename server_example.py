@@ -9,10 +9,10 @@ class example_events:
         pass
 
     async def on_close(self, client):
-        print("Client", client.id, "disconnected.", client.ip)
+        print("Client", client.id, "disconnected.")
 
     async def on_connect(self, client):
-        print("Client", client.id, "connected.", client.ip)
+        print("Client", client.id, "connected.")
 
 
 class example_commands:
