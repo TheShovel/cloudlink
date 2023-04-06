@@ -1,6 +1,5 @@
 from cloudlink import cloudlink
 
-
 class example_callbacks:
     def __init__(self, parent):
         self.parent = parent
