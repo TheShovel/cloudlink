@@ -4,30 +4,15 @@ from cloudlink import cloudlink
 class example_callbacks:
     def __init__(self, parent):
         self.parent = parent
-
-    async def test1(self, client, message, listener):
-        print("Test1!")
-        await self.parent.asyncio.sleep(1)
-        print("Test1 after one second!")
-
-    async def test2(self, client, message, listener):
-        print("Test2!")
-        await self.parent.asyncio.sleep(1)
-        print("Test2 after one second!")
-
-    async def test3(self, client, message, listener):
-        print("Test3!")
-
-
 class example_events:
     def __init__(self):
         pass
 
     async def on_close(self, client):
-        print("Client", client.id, "disconnected.")
+        print("Client", client.id, "disconnected.", client.ip)
 
     async def on_connect(self, client):
-        print("Client", client.id, "connected.")
+        print("Client", client.id, "connected.", client.ip)
 
 
 class example_commands:
@@ -71,38 +56,12 @@ if __name__ == "__main__":
     events = example_events()
 
     # Set the message-of-the-day.
-    server.set_motd("CL4 Optimized! Gotta Go Fast!", True)
+    server.set_motd("WorldSprites", True)
 
-    # Here are some extra parameters you can specify to change the functionality of the server.
-
-    # Defaults to empty list. Requires having check_ip_addresses set to True.
-    # server.ip_blocklist = ["127.0.0.1"]
-
-    # Defaults to False. If True, the server will refuse all connections until False.
-    # server.reject_clients = False
-
-    # Defaults to False. If True, client IP addresses will be resolved and stored until a client disconnects.
-    # server.check_ip_addresses = True
-
-    # Defaults to True. If True, the server will support Scratch's cloud variable protocol.
-    # server.enable_scratch_support = False
-
-    # Binding callbacks - This example binds the "handshake" command with example callbacks.
-    # You can bind as many functions as you want to a callback, but they must use async.
-    # To bind callbacks to built-in methods (example: gmsg), see cloudlink.cl_methods.
-    server.bind_callback(server.cl_methods.handshake, callbacks.test1)
-    server.bind_callback(server.cl_methods.handshake, callbacks.test2)
-
-    # Binding events - This example will print a client connect/disconnect message.
-    # You can bind as many functions as you want to an event, but they must use async.
-    # To see all possible events for the server, see cloudlink.events.
-    server.bind_event(server.events.on_connect, events.on_connect)
-    server.bind_event(server.events.on_close, events.on_close)
-
-    # Creating custom commands - This example adds a custom command "foobar" from example_commands
-    # and then binds the callback test3 to the new command.
-    server.load_custom_methods(commands)
-    server.bind_callback(commands.foobar, callbacks.test3)
+# Here are some extra parameters you can specify to change the functionality of the server.
+server.ip_blocklist = ["127.0.0.1"]
+server.reject_clients = False
+server.check_ip_addresses = True
 
     # Run the server.
     server.run(ip="0.0.0.0", port=3000)
