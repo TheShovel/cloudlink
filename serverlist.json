@@ -1,14 +1,18 @@
 {
 	"0": {
-		"id": "serv1",
-		"url": "wss://cloudlink-heroku-production.up.railway.app/"
+		"id": "Localhost",
+		"url": "ws://127.0.0.1:3000/"
 	},
 	"1": {
-		"id": "serv2",
-		"url": "wss://cloudlink-heroku-production.up.railway.app/"
+		"id": "CloudLink 4 Demo Server - Provided by Meower Media Co.",
+		"url": "wss://cl4-test.meower.org/"
 	},
 	"2": {
-		"id": "serv3",
-		"url": "wss://cloudlink-heroku-production.up.railway.app/"
+	       "id": "Cloudlink 4 - Suite demo server",
+	       "url":"wss://Cloudlink.showierdata9971.repl.co"
+	},
+	"3": {
+		"id": "Tnix's Oceania Server",
+		"url": "wss://cl4.tnix.dev/"
 	}
 }

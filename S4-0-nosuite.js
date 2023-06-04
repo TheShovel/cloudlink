@@ -3,7 +3,7 @@ let mWS = null;
 
 // Get the server URL list
 try {
-	fetch('https://theshovel.github.io/cloudlink-railway/serverlist.json').then(response => {
+	fetch('https://mikedev101.github.io/cloudlink/serverlist.json').then(response => {
 		return response.text();
 	}).then(data => {
 		servers = JSON.parse(data);
