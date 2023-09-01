@@ -1,6 +1,14 @@
 {
 	"0": {
-		"id": "WorldSpritesDefault",
-		"url": "wss://gameserver.worldsprites.com/"
+		"id": "serv1",
+		"url": "wss://worldsprites-server.onrender.com/"
+	},
+	"1": {
+		"id": "serv2",
+		"url": "wss://worldsprites-server.onrender.com/"
+	},
+	"2": {
+		"id": "serv3",
+		"url": "wss://worldsprites-server.onrender.com/"
 	}
 }
