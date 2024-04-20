@@ -1,18 +1,39 @@
 # Security Policy
+## Clients
+It is recommended to keep your copy of CloudLink up-to-date for improved security, performance, and stability.
+### Supported Versions
+#### Scratch
+| Version number    | Supported? | Note                                                                 |
+|-------------------|------------|----------------------------------------------------------------------|
+| 0.1.0             | 🟢 Yes     | Latest version.                                                      | 
+| S4.1              | 🟡 Partial | Legacy support.                                                      |
+| S4.0              | 🟡 Partial | Legacy support.                                                      |
+| B3.0              | 🔴 No      | End of life.                                                         |
+| S2.2              | 🔴 No      | End of life.                                                         |
+| S2.1              | 🔴 No      | End of life.                                                         |
+| S2.0              | 🔴 No      | End of life.                                                         |
+| S1.1              | 🔴 No      | End of life.                                                         |
+| S1.0              | 🔴 No      | End of life.                                                         |
+
+#### *Notice for Meower Variants of CloudLink*
+Special exceptions are given to Meower-specific builds of CloudLink. They will be maintained as long as
+Meower supports APIv0 or the CloudLink protocol.
+
+## Servers
 You are to keep your instance of Cloudlink as up-to-date as possible. You are to assume that support can be discontinued at any time, with or without reason. 
+### Supported Versions
+#### Python
+| Version number    | Supported? | Note                                                                 |
+|-------------------|------------|----------------------------------------------------------------------|
+| 0.2.0             | 🟢 Yes     | Latest version.                                                      | 
+| 0.1.9.x           | 🔴 No      | CL4 Optimized. EOL.                                                  |
+| 0.1.8.x           | 🔴 No      | Pre-CL4 optimized. EOL.                                              |
+| 0.1.7.x and older | 🔴 No      | CL3/CL Legacy - EOL.                                                 |
 
-## Supported Versions
-| Version number | Supported? | Note |
-|--------------|--------------|------|
-| 0.1.9.x      | 🟢 Yes | Latest release |
-| 0.1.8.x      | 🟠 Deprecated | Pre-CL4 optimized: Should be upgraded |
-| 0.1.7.x and older | 🔴 End of life | CL3/CL Legacy - EOL, should NOT be used |
-
-### Notice for public server hosts
+#### *Notice for public server providers*
 Public server hosts should maintain the latest version. If a public server host has been found to be running on a Deprecated release, or a version that has not been upgraded in over 30 days, your public host will be removed from the public server list and you will be notified to update your server.
 
-## Reporting vulnerabilities
-
+### Reporting vulnerabilities
 In the event that a vulnerability has been found, please use the following format to report said vulnerability:
 
 1. A title of the vulnerability - Should be less than 20 words

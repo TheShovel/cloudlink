@@ -1,6 +1,34 @@
 {
-	"0": {
-		"id": "serv1",
-		"url": "wss://gameserver.worldsprites.com"
-	}
+    "0": {
+        "id": "Localhost",
+        "url": "ws://127.0.0.1:3000/"
+    },
+    "1": {
+        "id": "William horning's VM Server",
+        "url": "wss://iovm-cl.williamhorning.eu.org/"
+    },
+    "2": {
+           "id": "William horning's Pi 4B Server",
+           "url":"wss://pi4b-cl.williamhorning.eu.org/"
+    },
+    "3": {
+        "id": "Tnix's Oceania Server",
+        "url": "wss://cl4.tnix.dev/"
+    },
+    "4": {
+        "id": "MubiLop's CL4 Server #1",
+        "url": "wss://cl1.mubi.tech/"
+    },
+    "5": {
+        "id": "MubiLop's CL4 Server #2",
+        "url": "wss://cl2.mubi.tech/"
+    },
+    "6": {
+        "id": "Milo's CL4 Server",
+        "url": "wss://cl4.milosantos.com/"
+    },
+    "7": {
+        "id": "MikeDEV's Spare CL 0.2.0 Server",
+        "url": "wss://cl.mikedev101.cc/"
+    }
 }
